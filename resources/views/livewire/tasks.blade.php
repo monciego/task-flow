@@ -3,12 +3,12 @@
         Tasks
     </h2>
 
-    <div class="my-4">
+    <form wire:submit='addTask' class="my-4">
         <x-text-input wire:model="task" />
-        <x-primary-button wire:click="addTask">
+        <x-primary-button>
             {{ __('Add') }}
         </x-primary-button>
-    </div>
+    </form>
 
     <ul class="text-black list-disc list-inside dark:text-white">
         @foreach ($tasks as $task)
