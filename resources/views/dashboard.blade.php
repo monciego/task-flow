@@ -10,7 +10,7 @@
             <livewire:welcome-banner />
 
             <div class="my-4">
-                <livewire:tasks />
+                <livewire:tasks.tasks />
             </div>
         </div>
     </div>
