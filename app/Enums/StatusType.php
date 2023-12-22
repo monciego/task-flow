@@ -2,9 +2,9 @@
 
 namespace App\Enums;
 
-enum StatusTyp: string
+enum StatusType: string
 {
-    public const STARTED = 'started';
-    public const IN_PROGRESS = 'in_progress';
-    public const DONE = 'done';
+    case STARTED = 'started';
+    case IN_PROGRESS = 'in_progress';
+    case DONE = 'done';
 }

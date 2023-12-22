@@ -4,7 +4,7 @@ namespace App\Enums;
 
 enum PriorityType: string
 {
-    public const LOW = "low";
-    public const NORMl = "normal";
-    public const high = "high";
+   case LOW = "low";
+   case NORMAL = "normal";
+   case HIGH = "high";
 }
