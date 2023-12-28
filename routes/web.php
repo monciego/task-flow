@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Livewire\Notes\Notes;
 use App\Livewire\Tasks\TaskCreate;
 use App\Livewire\Tasks\Tasks;
 use Illuminate\Support\Facades\Route;
@@ -30,6 +31,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::get('/tasks', Tasks::class)->name('tasks.index');
     Route::get('/tasks-create', TaskCreate::class)->name('tasks.create');
+    Route::get('/notes', Notes::class)->name('notes.index');
 });
 
 require __DIR__.'/auth.php';

@@ -18,6 +18,9 @@
                     <x-nav-link wire:navigate :href="route('tasks.index')" :active="request()->routeIs('tasks.*')">
                         {{ __('Tasks') }}
                     </x-nav-link>
+                    <x-nav-link wire:navigate :href="route('notes.index')" :active="request()->routeIs('notes.*')">
+                        {{ __('Notes') }}
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -82,6 +85,9 @@
             </x-responsive-nav-link>
             <x-responsive-nav-link wire:navigate :href="route('tasks.index')" :active="request()->routeIs('tasks.*')">
                 {{ __('Tasks') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link wire:navigate :href="route('notes.index')" :active="request()->routeIs('notes.*')">
+                {{ __('Notes') }}
             </x-responsive-nav-link>
         </div>
 
