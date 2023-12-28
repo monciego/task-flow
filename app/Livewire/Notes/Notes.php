@@ -8,6 +8,8 @@ class Notes extends Component
 {
     public function render()
     {
-        return view('livewire.notes.notes')->layout('layouts.app');
+        return view('livewire.notes.notes', [
+            'notes' => auth()->user()->notes
+        ])->layout('layouts.app');
     }
 }
