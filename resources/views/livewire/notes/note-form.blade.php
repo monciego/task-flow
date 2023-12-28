@@ -1,5 +1,5 @@
 <div class="col-span-3">
-    <form class="bg-slate-950 p-4 rounded">
+    <form wire:submit="save" class="bg-slate-950 p-4 rounded">
         <div class="grid gap-4 sm:grid-cols-2 sm:gap-6">
             <h2 class="text-white">Add notes</h2>
             <div class="sm:col-span-2">
