@@ -13,6 +13,7 @@ class NoteForm extends Component
         $this->form->validate();
         $this->form->createNote();
         // return $this->redirect(route("notes.index"), navigate: true);
+        $this->dispatch('note-created');
         $this->form->reset();
     }
     public function render()
