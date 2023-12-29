@@ -15,7 +15,7 @@
             </div>
             <div class="sm:col-span-2">
                 <label for="body" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Body</label>
-                <textarea id="body" wire:model.live.body" rows="8"
+                <textarea id="body" wire:model.live.body="form.body" rows="8"
                     class="border-gray-300 mt-2 w-full dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm"
                     placeholder="Your body here"></textarea>
                 <x-input-error :messages="$errors->get('form.body')" class="mt-2" />
