@@ -15,4 +15,7 @@
         </p>
     </div>
     @endforeach
+    <div class="mt-2">
+        {{ $notes->links() }}
+    </div>
 </div>
