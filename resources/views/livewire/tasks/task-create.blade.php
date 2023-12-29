@@ -5,7 +5,7 @@
             <div class="grid gap-4 sm:grid-cols-2 sm:gap-6">
                 <div class="sm:col-span-2">
                     <x-input-label for="task_name" :value="__('Task name')" />
-                    <x-text-input id="task_name" wire:model.live.live='form.task_name' class="w-full mt-2 "
+                    <x-text-input id="task_name" wire:model.live='form.task_name' class="w-full mt-2 "
                         placeholder='Task name' />
                     <x-input-error :messages="$errors->get('form.task_name')" class="mt-2" />
                 </div>

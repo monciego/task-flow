@@ -4,19 +4,18 @@
             <h2 class="text-white">Add notes</h2>
             <div class="sm:col-span-2">
                 <x-input-label for="title" :value="__('Note title')" />
-                <x-text-input id="title" wire:model.live.live='form.title' class="w-full mt-2 "
-                    placeholder='Note title' />
+                <x-text-input id="title" wire:model.live='form.title' class="w-full mt-2 " placeholder='Note title' />
                 <x-input-error :messages="$errors->get('form.title')" class="mt-2" />
             </div>
             <div class="sm:col-span-2">
                 <x-input-label for="category" :value="__('Category')" />
-                <x-text-input id="category" wire:model.live.live='form.category' class="w-full mt-2 "
+                <x-text-input id="category" wire:model.live='form.category' class="w-full mt-2 "
                     placeholder='Note category' />
                 <x-input-error :messages="$errors->get('form.category')" class="mt-2" />
             </div>
             <div class="sm:col-span-2">
                 <label for="body" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Body</label>
-                <textarea id="body" wire:model.live="form.body" rows="8"
+                <textarea id="body" wire:model.live.body" rows="8"
                     class="border-gray-300 mt-2 w-full dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm"
                     placeholder="Your body here"></textarea>
                 <x-input-error :messages="$errors->get('form.body')" class="mt-2" />
