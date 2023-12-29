@@ -12,7 +12,8 @@ class NoteForm extends Component
     public function save() {
         $this->form->validate();
         $this->form->createNote();
-        return $this->redirect(route("notes.index"), navigate: true);
+        // return $this->redirect(route("notes.index"), navigate: true);
+        $this->form->reset();
     }
     public function render()
     {
